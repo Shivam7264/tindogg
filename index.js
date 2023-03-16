@@ -40,16 +40,22 @@ return str
 }
 }
 
+
 let i=0;
 let obj=new dogy(dogs[i])
 
 i++;
 container.innerHTML=obj.render()
+let likes=false;
+  let dislikes=false;
 document.addEventListener('click',function(e){
-    if(e.target.dataset.like){
+  
+    if(e.target.dataset.like && !dislikes){
         document.getElementById(`badge1`).style.display="block";
       const target= liked(e.target.dataset.like)
        target.hasBeenLiked=true
+       likes=true
+       dislikes=true
      
        setTimeout(function(){
         if(i<dogs.length){
@@ -60,12 +66,18 @@ document.addEventListener('click',function(e){
             else{
                 container.innerHTML=thanks()
             }
+            likes=false
+            dislikes=false
+
      },2000)
     }
-   else  if(e.target.dataset.cross){  
+
+   else  if(e.target.dataset.cross && !likes ){  
         document.getElementById(`badge2`).style.display="block";
        const targetCross= swiped(e.target.dataset.cross)
       targetCross.hasBeenSwiped=true
+      dislikes=true
+      likes=true
         setTimeout(function(){
             if(i<dogs.length){
     obj=new dogy(dogs[i]);
@@ -75,12 +87,10 @@ document.addEventListener('click',function(e){
             else{
                 container.innerHTML=thanks()
             }
+            dislikes=false
+            likes=false
         },2000)
     }
-
-    
-
-
 })
 
 
