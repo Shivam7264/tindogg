@@ -17,11 +17,11 @@ header{
 
 }
 .chat{
-    margin-left: 3rem;
+    margin-left: 4rem;
 }
 .logo{
     padding-left: 1.4rem;
-    padding-top: 0.6rem;
+    padding-top: 0.4rem;
     width: 60%;
 }
 .icon{
@@ -37,6 +37,8 @@ section{
 
 .dog{
     max-width: 100%; 
+    min-height:590px;
+    max-height: 590px;
 }
 .dog1{
     position: relative;
@@ -94,10 +96,13 @@ color:white;
     position: absolute;
     left: 2rem;
     bottom: 26rem;
+    transform: rotate(-30deg);
 }
 
 #badge1{
     display: none;
+    
+
 }
 .greet{
     background:linear-gradient(white,pink) ;
@@ -161,7 +166,7 @@ button{
     }
     .logo{
         margin-left: 1.4rem;
-        margin-top: 0.4rem;
+        margin-top: 0.3rem;
         width: 50%;
     }
     .icon{
@@ -177,7 +182,8 @@ button{
     
     .dog{
         width: 100%; 
-        height: 600px;
+        min-height: 590px;
+        max-height: 590px;
     }
     .dog1{
         position: relative;
@@ -215,11 +221,11 @@ button{
     
   
     #badge1,#badge2{
-       
+        transform: rotate(-30deg);
         width: 40%;
         position: absolute;
         left: 2rem;
-        bottom: 24rem;
+        bottom: 22rem;
     }
     
  
