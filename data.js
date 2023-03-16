@@ -46,26 +46,7 @@ export const dogs = [
         bio: "I love to bite humans?",
         hasBeenSwiped: false,
         hasBeenLiked: false
-    },
-    {
-        uuid:5,
-        name: "polo",
-        avatar: "images/dog5.jpeg",
-        age: 23,
-        gender:"♀",
-        bio: "I love to bite humans?",
-        hasBeenSwiped: false,
-        hasBeenLiked: false
-    },
-    {
-        uuid:6,
-        name: "kaka",
-        avatar: "images/dog6.jpeg",
-        age: 20,
-        gender:"♀",
-        bio: "How you doin?",
-        hasBeenSwiped: false,
-        hasBeenLiked: false
     }
+   
 ]
 
