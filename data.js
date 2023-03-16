@@ -27,52 +27,45 @@ export const dogs = [
         bio: "How you doin?",
         hasBeenSwiped: false,
         hasBeenLiked: false
+    },{
+        uuid:3,
+        name: "golu",
+        avatar: "images/dog3.jpeg",
+        age: 30,
+        gender:"♀",
+        bio: "How you doin?",
+        hasBeenSwiped: false,
+        hasBeenLiked: false
+    },
+    {
+        uuid:4,
+        name: "Arsh",
+        avatar: "images/dog4.jpeg",
+        age: 22,
+        gender:"♀",
+        bio: "I love to bite humans?",
+        hasBeenSwiped: false,
+        hasBeenLiked: false
+    },
+    {
+        uuid:5,
+        name: "polo",
+        avatar: "images/dog5.jpeg",
+        age: 23,
+        gender:"♀",
+        bio: "I love to bite humans?",
+        hasBeenSwiped: false,
+        hasBeenLiked: false
+    },
+    {
+        uuid:6,
+        name: "kaka",
+        avatar: "images/dog6.jpeg",
+        age: 20,
+        gender:"♀",
+        bio: "How you doin?",
+        hasBeenSwiped: false,
+        hasBeenLiked: false
     }
 ]
 
-/*
-const arr=new Array(dogs.length)
-for(let i=0;i<dogs.length;i++){
-   arr[i]=dogs[i]
-}
-let newarr=arr.shift(); 
-let obj =new dogy(newarr)
-container.innerHTML=obj.render()
-
-
-document.getElementById("container").addEventListener('click',function(e){
-
-    if(e.target.dataset.like){
-      
-        handleLikeClicked(id)     
-    }
-    if(e.target.dataset.cross){
-      
-        handleDisLikeClicked(id)
-    }
-   
-})
-function handleLikeClicked(id){  
-  const target = dogs.filter(function(objs){
-        return objs.uuid==id
-    })
-    target.hasBeenLiked = true ; 
-    
-    document.getElementById(`badge1`).style.display="block"
-    setTimeout(function(){   
-    },3000)
-    newarr=arr.shift();
-    obj=new dogy(newarr)
-    container.innerHTML=obj.render()
-}
-function handleDisLikeClicked(id){  
-   const target = dogs.filter(function(objs){
-        return objs.uuid==id
-    })
-    target.hasBeenSwiped=true;
-   
-    document.getElementById(`badge2`).style.display="block"
-    
-}
-
-*/
